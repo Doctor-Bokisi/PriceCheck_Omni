@@ -1,0 +1,25 @@
+﻿
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="login-form">
+    <div class="top-login">
+        <span><img src="~/images/GenericCompany.jpg" alt="" /></span>
+    </div>
+    <h1>Barcode Scanner</h1>
+    <div class="login-top">
+        <form action="ProductDetails" method="post">
+            <div class="login-ic">
+                <i></i>
+                <input type="text" name="barcode" value="Barcode No" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Barcode No';}" />
+                <div class="clear"> </div>
+            </div>
+            <div class="log-bwn">
+                <input type="submit" value="Search">
+            </div>
+        </form>
+    </div>
+</div>		

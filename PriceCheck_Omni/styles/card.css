@@ -1,0 +1,379 @@
+﻿/*
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+*/
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, nav ul, nav li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after, q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* start editing from here */
+a {
+    text-decoration: none;
+}
+
+.txt-rt {
+    text-align: right;
+}
+/* text align right */
+.txt-lt {
+    text-align: left;
+}
+/* text align left */
+.txt-center {
+    text-align: center;
+}
+/* text align center */
+.float-rt {
+    float: right;
+}
+/* float right */
+.float-lt {
+    float: left;
+}
+/* float left */
+.clear {
+    clear: both;
+}
+/* clear float */
+.pos-relative {
+    position: relative;
+}
+/* Position Relative */
+.pos-absolute {
+    position: absolute;
+}
+/* Position Absolute */
+.vertical-base {
+    vertical-align: baseline;
+}
+/* vertical align baseline */
+.vertical-top {
+    vertical-align: top;
+}
+/* vertical align top */
+.underline {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+    margin: 0 0 20px 0;
+}
+/* Add 5px bottom padding and a underline */
+nav.vertical ul li {
+    display: block;
+}
+/* vertical menu */
+nav.horizontal ul li {
+    display: inline-block;
+}
+/* horizontal menu */
+img {
+    max-width: 100%;
+}
+/*end reset*/
+body {
+    font-family: 'Droid Sans', sans-serif;
+    background: url(../images/bbb.jpg) no-repeat;
+    background-size: 100% 110%;
+    text-align: center;
+}
+
+.pricing-table {
+    background: url(../images/table.png) no-repeat 1px 2px;
+    width: 23%;
+    height: 520px;
+    margin: 9% auto;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.pricing-table-info {
+    background: url(../images/cloud.png) no-repeat 0px 0px;
+    position: absolute;
+    width: 23%;
+    height: 16%;
+    top: -7%;
+    right: 40%;
+}
+
+    .pricing-table-info:hover {
+        transform: rotateY(360deg);
+        -webkit-transform: rotateY(360deg);
+        -moz-transform: rotateY(360deg);
+        -o-transform: rotateY(360deg);
+        -webkit-transition: 0.8s;
+        -moz-transition: 0.8s;
+        -o-transition: 0.8s;
+        transition: 0.8s;
+        cursor: pointer;
+    }
+
+.pricing-bottom h1 {
+    padding: 65px 0 20px;
+    color: #999;
+    border-bottom: 1px solid#999;
+    font-size: 1.5em;
+}
+
+.pricing-bottom h2 {
+    font-size: 3em;
+    color: #999;
+    padding: 10px 0;
+    border-bottom: 1px solid#999;
+}
+
+    .pricing-bottom h2 i {
+        color: #000;
+    }
+
+    .pricing-bottom h2 span {
+        color: #20b2fd;
+        font-weight: 600;
+        font-size: 1.5em;
+    }
+
+ul.price {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2em;
+}
+
+    ul.price li {
+        border-bottom: 1px solid#999;
+        width: 86%;
+        margin: 0 auto;
+        padding: 20px 0 15px;
+        color: #999;
+    }
+
+        ul.price li a {
+            color: #8C8C8C;
+        }
+
+            ul.price li a:hover {
+                color: #20b2fd;
+            }
+
+            ul.price li a img {
+                padding-right: 20px;
+                vertical-align: middle;
+            }
+
+li.price-info a img {
+    margin-left: 15px;
+}
+/* Shutter Out Horizontal */
+.hvr-shutter-out-horizontal {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    background: #e1e1e1;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+    .hvr-shutter-out-horizontal:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #2098d1;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: 50%;
+        transform-origin: 50%;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+
+    .hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
+        color: white;
+    }
+
+        .hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+        }
+
+/*--copyrights--*/
+.copyrights p {
+    font-family: 'Droid Sans', sans-serif;
+    color: #fff;
+    display: block;
+    font-size: 1.2em;
+    font-weight: 100;
+    text-align: center;
+}
+
+    .copyrights p a {
+        color: #00CDFF;
+        transition: all 0.5s ease-out;
+        -webkit-transition: all 0.5s ease-out;
+        -moz-transition: all 0.5s ease-out;
+        -ms-transition: all 0.5s ease-out;
+        -o-transition: all 0.5s ease-out;
+    }
+
+        .copyrights p a:hover {
+            color: #999;
+            -webkit-transition: all 1s ease-in-out;
+            -moz-transition: all 1s ease-in-out;
+            -o-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+        }
+/*--start-responsive-design--*/
+@media (max-width:1440px) {
+    .pricing-table-info {
+        width: 26%;
+        height: 16%;
+        top: -9%;
+        right: 37%;
+    }
+}
+
+@media (max-width:1280px) {
+    .pricing-table-info {
+        width: 26%;
+        height: 16%;
+        top: -8%;
+        right: 37%;
+    }
+
+    .pricing-table {
+        width: 28%;
+    }
+}
+
+@media (max-width:1366px) {
+    .pricing-table-info {
+        width: 28%;
+        height: 16%;
+        top: -7%;
+        right: 36%;
+    }
+
+    .pricing-table {
+        width: 26%;
+    }
+}
+
+@media (max-width:1024px) {
+    .pricing-table {
+        width: 33%;
+    }
+
+    .pricing-table-info {
+        right: 36%
+    }
+}
+
+@media (max-width:768px) {
+    .pricing-table {
+        width: 40%;
+    }
+}
+
+@media (max-width:640px) {
+    body {
+        background-size: 100% 135%;
+    }
+
+    .pricing-table {
+        width: 64%;
+        margin: 25% auto;
+    }
+
+    .pricing-bottom h2 span {
+        font-size: 1.1em;
+    }
+
+    .pricing-bottom h2 {
+        font-size: 2.5em;
+    }
+
+    .copyrights {
+        margin-top: 9em;
+    }
+
+    .pricing-table-info {
+        right: 35%;
+    }
+}
+
+@media (max-width:480px) {
+}
+
+@media (max-width:320px) {
+    .pricing-table {
+        width: 85%;
+        margin: 50% auto;
+        height: 490px;
+    }
+
+    .pricing-table-info {
+        right: 38%;
+        width: 25%;
+        background-size: 100%;
+        top: -5%;
+    }
+
+    ul.price li {
+        width: 93%;
+    }
+
+    .pricing-bottom h1 {
+        font-size: 1.2em;
+    }
+
+    ul.price li a {
+        font-size: 15px;
+    }
+
+    a.price-button {
+        padding: 16px 22px;
+    }
+}

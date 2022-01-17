@@ -1,0 +1,35 @@
+﻿@model PriceCheck_Omni.Models.StockPort
+
+@{
+    ViewBag.Title = "ProductDetails";
+}
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link href="~/styles/card.css" rel="stylesheet" />
+
+</head>
+
+<div class="pricing-table">
+    <div class="pricing-table-info">
+    </div>
+    @foreach (var item in Model.stock_export)
+    {
+        <div class="pricing-bottom">
+
+            <h1>Product Details</h1>
+            <h2><i>@item.selling_price_currency</i>@item.selling_price_incl</h2>
+            <ul class="price">
+                <li class="price-info"><a href="#"><img src="~/images/1.png" />@item.bar_code</a></li>
+                <li><a href="#"><img src="~/images/1.png" />@item.stock_description</a></li>
+                <li><a href="#"><img src="~/images/1.png" />@item.stock_code</a></li>
+            </ul>
+            
+        </div>
+    }
+    </div>
+
+
+
